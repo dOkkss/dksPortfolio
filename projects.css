@@ -1,0 +1,80 @@
+.projects-hero img {
+  max-height: 1000px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.project-con {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  padding: 32px;
+  width: 50%;
+}
+
+.project-text .left h2,
+.project-text .right h2 {
+  font-weight: 400;
+  font-size: var(--font-size-md);
+}
+
+.project-text .right p,
+.project-text .left p {
+  padding-bottom: 32px;
+  font-size: var(--font-size-sm);
+}
+
+.seconds p {
+  margin-top: 3rem;
+}
+
+.project-img {
+  display: flex;
+  height: 600px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .left,
+  .right {
+    padding: 24px 16px;
+  }
+  .project-text .left h2,
+  .project-text .right h2 {
+    font-size: var(--font-size-base);
+  }
+
+  .project-text .right p,
+  .project-text .left p {
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .left,
+  .right {
+    padding: 16px 16px;
+    width: 100%;
+  }
+
+  .project-text .left h2,
+  .project-text .right h2 {
+    padding-bottom: 4px;
+    font-size: 1.2rem;
+  }
+
+  .project-text .right p,
+  .project-text .left p {
+    padding-bottom: 16px;
+    font-size: 0.8rem;
+  }
+}

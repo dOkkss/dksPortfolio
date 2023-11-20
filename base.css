@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Nunito Sans", Arial, sans-serif;
+}
+
+:root {
+  --font-size-sm: clamp(0.9rem, 0.34vw + 0.82rem, 1.13rem);
+  --font-size-base: clamp(1.13rem, 0.57vw + 0.99rem, 1.5rem);
+  --font-size-md: clamp(1.41rem, 0.9vw + 1.19rem, 2rem);
+  --font-size-lg: clamp(1.76rem, 1.38vw + 1.42rem, 2.67rem);
+
+  --bgcolor: #323b4a;
+  --basecolor: #30d3e9;
+  --extlinkcolor: #e93072;
+  --secondarycolor: #e9e130;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  background-color: var(--bgcolor);
+  color: var(--basecolor);
+  padding: 0 5vw;
+}
+
+a {
+  color: var(--basecolor);
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: solid 1px var(--basecolor) ;
+  margin-bottom: 2rem;
+}
+
+.navbar a {
+  font-weight: 200;
+  font-size: var(--font-size-base);
+  color: #30d3e9;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
+.navbar a:hover {
+  font-style: oblique;
+  color: var(--secondarycolor);
+}
+
+.navbar nav a {
+  padding: 0 1rem;
+}
+
+.navbar nav a:last-child {
+  padding: 0 0 0 1rem;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .hero-img img {
+  transition: ease-in-out 0.3s;
+}
+
+.container .hero-img img:hover {
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.seconds {
+  color: var(--secondarycolor);
+}
+
+footer {
+  margin-top: 4vh;
+  padding: 3rem 0;
+  display: flex;
+  border-top: 1px solid;
+  z-index: 4;
+  position: sticky;
+}
+
+footer p {
+  padding-right: 1rem;
+}
+
+footer a {
+  color: var(--extlinkcolor);
+  font-weight: 400;
+  padding: 0 1rem;
+  text-decoration: none;
+  transition: ease-in 0.3s;
+}
+
+footer a:hover {
+  color: var(--secondarycolor);
+  font-style: oblique;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    max-width: 1450px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container .hero-img img:hover {
+    border-radius: 0px;
+  }
+
+  .navbar {
+    padding: 2.5rem 0;
+    flex-direction: column;
+  }
+
+  .navbar a {
+    font-size: var(--font-size-base);
+  }
+
+  .navbar nav a:first-child {
+    padding-right: 0.8rem;
+  }
+
+  .navbar nav a:last-child {
+    padding-left: 0.8rem;
+  }
+
+  .container .hero-img img:hover {
+    border-radius: 0px;
+  }
+}

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", Arial, sans-serif;
+}
+
+:root {
+  --bgcolor: #323b4a;
+  --basecolor: #30d3e9;
+  --extlinkcolor: #e93072;
+  --secondarycolor: #e9e130;
+}
+
+body {
+  background-color: var(--bgcolor);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5vw 20%;
+  z-index: 3;
+  position: fixed;
+  background-color: transparent;
+}
+
+header a {
+  font-weight: 200;
+  font-size: 1rem;
+  color: var(--basecolor);
+  text-decoration: none;
+  transition: ease-in 0.5s;
+}
+
+header a:hover {
+  color: var(--secondarycolor);
+  font-style: oblique;
+}
+
+.right {
+  display: flex;
+  gap: 1rem;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+}
+
+.images {
+  height: 100vh;
+}
