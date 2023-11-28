@@ -33,8 +33,18 @@
 
 .project-img {
   display: flex;
-  height: 600px;
   justify-content: center;
+  height: 500px;
+}
+
+.project2-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project2-img img {
+  max-height: 550px;
+  width: auto;
 }
 
 @media screen and (max-width: 1440px) {
@@ -53,11 +63,21 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .project-img {
+    height: 400px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .project-con {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .project-img {
+    height: 200px;
   }
 
   .left,
