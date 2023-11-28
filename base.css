@@ -26,6 +26,7 @@ body {
 
 a {
   color: var(--basecolor);
+  text-decoration: none;
 }
 
 img {
@@ -43,8 +44,6 @@ img {
 .navbar a {
   font-weight: 200;
   font-size: var(--font-size-base);
-  color: #30d3e9;
-  text-decoration: none;
   transition: ease-in-out 0.3s;
 }
 
@@ -55,10 +54,6 @@ img {
 
 .navbar nav a {
   padding: 0 1rem;
-}
-
-.navbar nav a:last-child {
-  padding: 0 0 0 1rem;
 }
 
 .container {
@@ -115,7 +110,7 @@ footer a:hover {
 
   .navbar {
     padding: 2.5rem 0;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .navbar a {
@@ -136,7 +131,7 @@ footer a:hover {
 
   footer {
     flex-direction: column;
-    padding: 2rem 5vw; 
+    padding: 2rem 5vw;
   }
 
   footer a {

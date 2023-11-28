@@ -16,7 +16,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -32,10 +32,10 @@ header {
 
 header a {
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--basecolor);
   text-decoration: none;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.3s;
 }
 
 header a:hover {
@@ -43,16 +43,7 @@ header a:hover {
   font-style: oblique;
 }
 
-.right {
-  display: flex;
-  gap: 1rem;
-}
-
 .overlay {
   position: fixed;
   z-index: 2;
-}
-
-.images {
-  height: 100vh;
 }

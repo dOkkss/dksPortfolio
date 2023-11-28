@@ -1,3 +1,17 @@
+.mega {
+  margin: 15vw 0;
+}
+
+.mega h1 {
+  font-weight: 900;
+  font-size: var(--font-size-lg);
+  text-align: center;
+}
+
+.mega h1 span {
+  color: var(--secondarycolor);
+}
+
 .text-project {
   font-weight: 200;
   font-size: var(--font-size-sm);
@@ -26,6 +40,10 @@
 } */
 
 @media screen and (max-width: 600px) {
+  .mega {
+    display: none;
+  }
+
   .text-project {
     font-size: 0.8rem;
     line-height: 13px;
@@ -34,5 +52,11 @@
 
   .container h5 {
     font-size: var(--font-size-sm);
+  }
+
+  .container a img {
+    height: 90vw;
+    width: 90vw;
+    object-fit: cover;
   }
 }
