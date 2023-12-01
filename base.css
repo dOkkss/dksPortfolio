@@ -5,10 +5,13 @@
 }
 
 :root {
-  --font-size-sm: clamp(0.9rem, 0.34vw + 0.82rem, 1.13rem);
-  --font-size-base: clamp(1.13rem, 0.57vw + 0.99rem, 1.5rem);
-  --font-size-md: clamp(1.41rem, 0.9vw + 1.19rem, 2rem);
-  --font-size-lg: clamp(1.76rem, 1.38vw + 1.42rem, 2.67rem);
+  --font-size-xs: clamp(0.64rem, 0.12vw + 0.61rem, 0.7rem);
+  --font-size-small: clamp(0.8rem, 0.25vw + 0.74rem, 0.94rem);
+  --font-size-base: clamp(1rem, 0.45vw + 0.89rem, 1.25rem);
+  --font-size-large: clamp(1.25rem, 0.76vw + 1.06rem, 1.67rem);
+  --font-size-xl: clamp(1.56rem, 1.2vw + 1.26rem, 2.22rem);
+  --font-size-xxl: clamp(1.95rem, 1.83vw + 1.5rem, 2.96rem);
+  --font-size-xxxl: clamp(2.44rem, 2.74vw + 1.76rem, 3.95rem);
 
   --bgcolor: #323b4a;
   --basecolor: #30d3e9;
@@ -33,26 +36,29 @@ img {
   max-width: 100%;
 }
 
-.navbar {
+header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  border-bottom: solid 1px var(--basecolor);
+  padding: 2rem 2rem;
   margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--bgcolor);
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 1rem), 0% 100%);
 }
 
-.navbar a {
+header a {
   font-weight: 200;
   font-size: var(--font-size-base);
   transition: ease-in-out 0.3s;
 }
 
-.navbar a:hover {
+header a:hover {
   font-style: oblique;
   color: var(--secondarycolor);
 }
 
-.navbar nav a {
+header nav a {
   padding: 0 1rem;
 }
 
